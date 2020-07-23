@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Tracking</title>
+    </head>
+
+    <body>
+
+        <!-- Make your own design -->
+        <form onsubmit="trackOrder()">
+            <input type="text" id="trackingId" placeholder="Order Tracking ID">
+            <button type="submit">Search</button>
+        </form>
+
+        <script>
+            function trackOrder() {
+                var trackingId = document.getElementById("trackingId").value;
+                if (trackingId) {
+                    /* Replace the link with your panel tracking link */
+                    window.open("https://portal.landknock.com/order-tracking/" + trackingId, "_blank");
+                }
+            }
+        </script>
+    </body>
+</html>
